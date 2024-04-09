@@ -106,7 +106,7 @@ rightHandUpper = \relative {
   b8[-. r16 <b c>-.( <b cs>8-. <b d>]-. <b ds>4) |
   e16( g'8-.) r16 fs8(\prall e c b) |
   as8( b c as) \tuplet 3/2 { b fs a } |
-  e16( g'8-.) r16 fs8(\prall e c b) |
+  g16( g'8-.) r16 fs8(\prall e c b) |
   
   \barNumberCheck 65
   as8( b c as) \tuplet 3/2 { b fs a } |
