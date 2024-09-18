@@ -15,7 +15,7 @@ To create a smaller PDF, try:
 You may also [download the latest release](https://github.com/ksnortum/chopin-opus-17/releases/latest) to get the compiled PDF and MIDI files.
 
 ### Problems with MIDI
-The MIDI playback for the fourth mazurka is incorrect.  I couldn't find a way for the music to end at the first ending of the first repeat volta, only the second.  For the PDF, I just moved the "Fine" to the left so it is under the first ending, but this doesn't affect the playback.
+The MIDI playback for the third mazurka is incorrect.  I couldn't find a way for the music to end at the first ending of the first repeat volta, only the second.  For the PDF, I just moved the "Fine" to the left so it is under the first ending, but this doesn't affect the playback.
 
 ### Two-sided printing
 The pieces are set up so that they can be printed on two sides of the paper, leaving an extra margin amount on the inside pages for binding.  If you don't want this, open the file `header-paper.ily`,

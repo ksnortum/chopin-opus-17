@@ -29,6 +29,7 @@ moveHairpinA = \tweak extra-offset #'(0 . -3) \etc
 global = {
   \time 3/4
   \key bf \major
+  \set Score.fineBarType = "||"
 }
 
 rightHandUpper = \relative {
@@ -83,7 +84,7 @@ rightHandUpper = \relative {
     f8[) s16 b,]-\slurShapeF ( \oneVoice <b ef!>4-. <b d>-.) |
     \voiceOne c4.->-\slurShapeG ( ef8-\moveHairpinA ^\> d c\! |
     \oneVoice <bf d>8[-.) r16 <f c'>]( <d bf'>4-.) <bf' bf'> |
-    \volta 2 { \bar "||" \fine }
+    \volta 2 \fine
     
     \volta 1 {
       \barNumberCheck 41
@@ -245,7 +246,6 @@ leftHand = \relative {
       <bf' af'>8 q ef,4 <bf' af'> |
       ef,4 <af' d> q |
       ef,4 <af' d> q |
-      % like 45
       ef,4 <bf' af'> ef, |
       <bf' af'>8 q ef,4 <bf' af'> |
       ef,4 <bf' af'> ef, |
@@ -465,6 +465,7 @@ pedal = {
 }
 
 forceBreaks = {
+  % page 1
   \partial 4 s4
   s2. * 4 \break
   s2. * 6 \break
@@ -472,6 +473,7 @@ forceBreaks = {
   s2. * 6 \break
   s2. * 6 \pageBreak
   
+  % page 2
   s2. * 6 \break
   s2. * 6 \break
   s2. * 7 \break

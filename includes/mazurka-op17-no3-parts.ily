@@ -96,10 +96,10 @@ rightHandUpper = \relative {
       c8~( c32 bf c bf af8[-.) r16 af']( f4->) |
       bf,8.( c16 df4 \voiceOne c8. bf16 |
       \alternative {
-        \volta 1 {
+        {
           df8. c16 af4) 
         }
-        \volta 2 {
+        {
           df8.-\slurShapeM ( c16 af2)_( |
         }
       }
@@ -165,10 +165,10 @@ rightHandUpper = \relative {
         ds8 b a!4. cs8 |
         b8 gs fs4. a8 |
         \alternative {
-          \volta 1 {
+          {
             gs8[) r16 b,]( e4) 
           }
-          \volta 2 { 
+          { 
             gs8[^\repeatTie r16 b,]( e2->)\fermata |
           }
         }
@@ -214,10 +214,10 @@ rightHandLower = \relative {
       s2. * 6 |
       s2 \voiceFour g4 |
       \alternative {
-        \volta 1 {
+        {
           af4 af
         }
-        \volta 2 {
+        {
           af4 s2 |
         }
       }
@@ -244,10 +244,10 @@ rightHandLower = \relative {
         \barNumberCheck 73
         s2. * 7 |
         \alternative {
-          \volta 1 {
+          {
             s2
           }
-          \volta 2 { 
+          { 
             s2. |
           }
         }
@@ -311,10 +311,10 @@ leftHandUpper = \relative {
       s2. |
       s2 ef8.( df!16 |
       \alternative {
-        \volta 1 {
+        {
           f8. ef16 c4) 
         }
-        \volta 2 {
+        {
           f8.-\slurShapeM ( ef16 c4) cf->-\slurShapeN ( |
         }
       }
@@ -342,10 +342,10 @@ leftHandUpper = \relative {
         \barNumberCheck 73
         s2. * 7 |
         \alternative {
-          \volta 1 {
+          {
             s2
           }
-          \volta 2 { 
+          { 
             s2. |
           }
         }
@@ -409,10 +409,10 @@ leftHandLower = \relative {
         -\slurShapeL ^( |
       <ef g>4 <bf f'>) \clef bass ef,4 |
       \alternative {
-        \volta 1 {
+        {
           af2 
         }
-        \volta 2 {
+        {
           af2. |
         }
       }
@@ -473,10 +473,10 @@ leftHandLower = \relative {
         b,4-. <fs' a! ds> q |
         r4 <b, ds a'> q |
         \alternative {
-          \volta 1 {
+          {
             e,4-. <e' gs> 
           }
-          \volta 2 { 
+          { 
             e,4-. <e' gs> e'(\fermata |
           }
         }
@@ -523,10 +523,10 @@ dynamics = {
       s2. * 6 |
       s4-\tweak extra-offset #'(0 . -2) \< s2\! |
       \alternative {
-        \volta 1 {
+        {
           s2 
         }
-        \volta 2 {
+        {
           s2. |
         }
       }
@@ -565,10 +565,10 @@ dynamics = {
         \barNumberCheck 73
         s2. * 7 |
         \alternative {
-          \volta 1 {
+          {
             s2
           }
-          \volta 2 { 
+          { 
             s2. |
           }
         }
@@ -610,11 +610,11 @@ tempi = {
       \barNumberCheck 33
       s2. * 7 |
       \alternative {
-        \volta 1 {
+        {
           \tempo 4 = 126
           s2 
         }
-        \volta 2 {
+        {
           \tempo 4 = 126
           s2. |
         }
@@ -642,11 +642,11 @@ tempi = {
         \barNumberCheck 73
         s2. * 7 |
         \alternative {
-          \volta 1 {
+          {
             \tempo 4 = 126
             s2
           }
-          \volta 2 { 
+          { 
             \tempo 4 = 126
             s2 \tempo 4 = 80 s4 |
           }
@@ -679,10 +679,10 @@ pedal = {
       \barNumberCheck 33
       s2. * 7 |
       \alternative {
-        \volta 1 {
+        {
           s2
         }
-        \volta 2 {
+        {
           s2. |
         }
       }
@@ -732,10 +732,10 @@ pedal = {
         s2.\sd |
         s4\su s2 |
         \alternative {
-          \volta 1 {
+          {
             s2
           }
-          \volta 2 { 
+          { 
             s2. |
           }
         }
@@ -746,6 +746,7 @@ pedal = {
 }
 
 forceBreaks = {
+  % page 1
   \partial 4 s4
   s2. * 5 \break
   s2. * 7 \break
@@ -754,6 +755,7 @@ forceBreaks = {
   s2. * 7 \break
   s2. * 6 \pageBreak
   
+  % page 2
   s2. s2 s2. * 6 \break
   s2. * 8 \break
   s2. * 7 \break

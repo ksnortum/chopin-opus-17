@@ -139,7 +139,6 @@ rightHandUpper = \relative {
   b8 bs cs4.-> fs8 |
   e8 b! cs4.-> fs8 |
   e8 ds d4.-> bs8 |
-  % like 61
   cs8 b! a4 fs |
   \grace { gs16 fs } e2.*2/3 s8 \hideNoteHead b) |
   cs'8( b a4 fs |
@@ -150,7 +149,6 @@ rightHandUpper = \relative {
   b8 cs d4 ds |
   e8 d! b4 cs8 b |
   a8 cs) b2-> |
-  % like 69
   cs8( b a4 fs |
   \grace { gs16 fs } e2.*2/3 s8 \hideNoteHead b) |
   cs'8( b a4 fs |
@@ -159,11 +157,11 @@ rightHandUpper = \relative {
   \barNumberCheck 89
   e8( fs gs4 a |
   b8 cs d4 e |
-  f8[ r16 e]) \slashedGrace { g8 } f4. e8 |
+  f8[ r16 e]) \oneVoice \slashedGrace { g8 } f4. e8 |
   \slashedGrace { g8 } f8. e16 f4. b,8-\slurShapeI (_~ |
   \bar "||"
   \key a \minor
-  \oneVoice b8. c16 d4 a |
+  b8. c16 d4 a |
   \slashedGrace { a8 } c2) b8( c |
   \grace { d16 e } d8 cs \tuplet 3/2 { d-. e-. f-. } g[-.) r16 d]( |
   e2.)^\ten |
@@ -431,8 +429,8 @@ leftHand = \relative {
   \barNumberCheck 89
   <a e' b'>4 q q |
   q4 q q |
-  q8 r16 \staffUp \voiceTwo e'' \slashedGrace { g8 } f4. e8 |
-  \slashedGrace { g8 } f8. e16 \staffDown f2.*2/3^(^\ten |
+  q8 r16 e'' \slashedGrace { g8 } f4. e8 |
+  \slashedGrace { g8 } f8. e16 f2.*2/3^(^\ten |
   \key a \minor
   <<
     { \voiceThree s4 f2.*2/3)( | s4 f2.*2/3)( | s4 f2) | }
@@ -638,7 +636,7 @@ tempi = {
   
   \barNumberCheck 105
   s2. * 3 |
-  \tempo 4= 126
+  \tempo 4 = 126
   s2. * 5 |
   
   \barNumberCheck 113
@@ -733,12 +731,14 @@ pedal = {
 }
 
 forceBreaks = {
+  % page 1
   s2. * 9 \break %
   s2. * 8 \break %
   s2. * 8 \break %
   s2. * 8 \break %
   s2. * 7 \pageBreak %
   
+  % page 2
   \grace { s8 } s2. * 8 \break %
   s2. * 7 \break %
   s2. * 8 \break %
@@ -746,6 +746,7 @@ forceBreaks = {
   s2. * 8 \break %
   s2. * 8 \pageBreak %
   
+  % page 3
   s2. * 8 \break %
   s2. * 8 \break %
   s2. * 7 \break % 
